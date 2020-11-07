@@ -23,3 +23,4 @@ C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Acco
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.Math.xml
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.Math.Core.xml
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.Statistics.xml
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.Form4.resources

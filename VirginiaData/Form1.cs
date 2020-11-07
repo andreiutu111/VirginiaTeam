@@ -66,11 +66,24 @@ namespace VirginiaData
             Application.Run(new Form3()); 
         }
 
+        private void usu4(object obj)
+        {
+            Application.Run(new Form4());
+        }
+
         //Google Docs
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
             th = new Thread(usu3);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(usu4);
             th.SetApartmentState(ApartmentState.STA);
             th.Start();
         }
