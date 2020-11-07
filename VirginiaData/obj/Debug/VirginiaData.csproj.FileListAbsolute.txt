@@ -8,3 +8,4 @@ C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\Virg
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.exe
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.pdb
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.Form1.resources
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.Form2.resources
