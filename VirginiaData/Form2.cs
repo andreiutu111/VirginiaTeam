@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Controls;
+using System.Threading;
 
 namespace VirginiaData
 {
     public partial class Form2 : Form
     {
+
+        Thread th; 
         public Form2()
         {
             InitializeComponent();
@@ -48,5 +51,19 @@ namespace VirginiaData
         {
             richTextBox1.Text = ""; 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(usu2);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
+        }
+
+        private void usu2(object obj)
+        {
+            Application.Run(new Form1());
+        }
+
     }
 }
