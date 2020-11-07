@@ -36,12 +36,14 @@ namespace VirginiaData
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string act = ""; 
             for (int i = 0; i < richTextBox1.Lines.Count(); i++)
             {
                 usu[i] = richTextBox1.Lines[i];
-                MessageBox.Show(usu[i]);
+                act = act + " " + usu[i];
             }
 
+            solve(act); 
 
         }
 
@@ -63,6 +65,11 @@ namespace VirginiaData
         private void usu2(object obj)
         {
             Application.Run(new Form1());
+        }
+
+        private void solve(string s)
+        {
+            MessageBox.Show(s); 
         }
 
     }
