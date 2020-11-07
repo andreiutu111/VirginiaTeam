@@ -10,6 +10,9 @@ using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Controls;
 using System.Threading;
+using iTextSharp.text;
+using System.IO;
+using iTextSharp.text.pdf;
 
 namespace VirginiaData
 {
@@ -69,7 +72,28 @@ namespace VirginiaData
 
         private void solve(string s)
         {
-            MessageBox.Show(s); 
+            using(SaveFileDialog sfd = new SaveFileDialog() { Filter = "PDF file|*.pdf", ValidateNames = true })
+            {
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    iTextSharp.text.Document doc = new iTextSharp.text.Document(PageSize.A4.Rotate());
+
+                    try
+                    {
+                        PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
+                        doc.Open();
+                        doc.Add(new iTextSharp.text.Paragraph(s));
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        doc.Close();
+                    }
+                }
+            }
         }
 
     }
