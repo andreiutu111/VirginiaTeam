@@ -13,3 +13,4 @@ C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Boun
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\itextsharp.dll
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\itextsharp.xml
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.csproj.CopyComplete
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.Form3.resources

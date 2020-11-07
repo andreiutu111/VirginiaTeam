@@ -20,6 +20,7 @@ namespace VirginiaData
             InitializeComponent();
         }
 
+        //PASTE
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -34,6 +35,8 @@ namespace VirginiaData
             Application.Run(new Form2());
         }
 
+
+        //PDF
         private void button2_Click(object sender, EventArgs e)
         {
             using(OpenFileDialog ofd = new OpenFileDialog() { Filter="PDF files|*.pdf", ValidateNames = true, Multiselect = false})
@@ -56,6 +59,20 @@ namespace VirginiaData
                     }
                 }
             }
+        }
+
+        private void usu3(object obj)
+        {
+            Application.Run(new Form3()); 
+        }
+
+        //Google Docs
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            th = new Thread(usu3);
+            th.SetApartmentState(ApartmentState.STA);
+            th.Start();
         }
     }
 }
