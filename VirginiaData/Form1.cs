@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iTextSharp.text.pdf.parser;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,30 @@ namespace VirginiaData
         private void usu2(object obj)
         {
             Application.Run(new Form2());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using(OpenFileDialog ofd = new OpenFileDialog() { Filter="PDF files|*.pdf", ValidateNames = true, Multiselect = false})
+            {
+                if(ofd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        iTextSharp.text.pdf.PdfReader reader = new iTextSharp.text.pdf.PdfReader(ofd.FileName);
+                        StringBuilder sb = new StringBuilder(); 
+                        for(int i = 1; i <= reader.NumberOfPages; ++i)
+                        {
+                            sb.Append(PdfTextExtractor.GetTextFromPage(reader, i));
+                        }
+                        MessageBox.Show(sb.ToString()); 
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error); 
+                    }
+                }
+            }
         }
     }
 }

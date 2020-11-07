@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Controls;
-using System.Net;
 
 namespace VirginiaData
 {
@@ -30,15 +29,6 @@ namespace VirginiaData
             
         }
 
-        public static void DownloadString(string address)
-        {
-            WebClient client = new WebClient();
-            string reply = client.DownloadString(address);
-
-            string aca = reply[3]; 
-            MessageBox.Show(aca);
-        }
-
         String[] usu = new String[10001];
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,10 +39,10 @@ namespace VirginiaData
                 MessageBox.Show(usu[i]);
             }
 
-            DownloadString("https://docs.google.com/document/d/1cHn62cveAi8pzurMRApM-tzX57Zh5Bulj19k0ZGA8nA/edit"); 
 
         }
 
+        
 
         private void button2_Click(object sender, EventArgs e)
         {

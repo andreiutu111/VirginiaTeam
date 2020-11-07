@@ -9,3 +9,7 @@ C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\Virg
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.pdb
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.Form1.resources
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.Form2.resources
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\itextsharp.dll
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\itextsharp.xml
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.csproj.CopyComplete
