@@ -1,0 +1,10 @@
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\VirginiaData.exe.config
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\VirginiaData.exe
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\VirginiaData.pdb
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.csprojAssemblyReference.cache
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.Properties.Resources.resources
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.csproj.GenerateResource.cache
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.csproj.CoreCompileInputs.cache
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.exe
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.pdb
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.Form1.resources
