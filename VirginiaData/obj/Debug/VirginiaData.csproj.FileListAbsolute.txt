@@ -14,3 +14,12 @@ C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\itex
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\itextsharp.xml
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.csproj.CopyComplete
 C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\obj\Debug\VirginiaData.Form3.resources
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.dll.config
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.dll
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.Math.Core.dll
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.Math.dll
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.Statistics.dll
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.xml
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.Math.xml
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.Math.Core.xml
+C:\Users\Usurelu Florian\Desktop\Github\VirginiaTeam\VirginiaData\bin\Debug\Accord.Statistics.xml
