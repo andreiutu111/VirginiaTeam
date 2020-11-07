@@ -76,13 +76,40 @@ namespace VirginiaData
             {
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    iTextSharp.text.Document doc = new iTextSharp.text.Document(PageSize.A4.Rotate());
+                    iTextSharp.text.Document doc = new iTextSharp.text.Document(PageSize.A4);
 
                     try
                     {
                         PdfWriter.GetInstance(doc, new FileStream(sfd.FileName, FileMode.Create));
                         doc.Open();
-                        doc.Add(new iTextSharp.text.Paragraph(s));
+
+                        String[] v1 = new String[10001];
+                        String[] v2 = new String[10001];
+                        String[] v3 = new String[10001];
+
+                        doc.Add(new iTextSharp.text.Paragraph("Dear friend,"));
+                        doc.Add(new iTextSharp.text.Paragraph(""));
+                        doc.Add(new iTextSharp.text.Paragraph("We respect the fact that you are seeking for help and you trust our services. We extracted your 'Terms and Conditions' content:"));
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
+
+                        Chunk linie = new Chunk("All good");
+                        linie.SetUnderline(0.1f, -2.0f);
+                        doc.Add(linie);
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
+
+                        linie = new Chunk("Take a look!");
+                        linie.SetUnderline(0.1f, -2.0f);
+                        doc.Add(linie);
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
+
+                        linie = new Chunk("Contacts");
+                        linie.SetUnderline(0.1f, -2.0f);
+                        doc.Add(linie);
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
                     }
                     catch (Exception ex)
                     {
