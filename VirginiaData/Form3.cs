@@ -53,6 +53,8 @@ namespace VirginiaData
                 }
             }
 
+            textBox1.Text = ""; 
+
             solve(act); 
 
         }
