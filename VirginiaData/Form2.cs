@@ -242,7 +242,7 @@ namespace VirginiaData
                         }
 
                         pozStart = s.IndexOf("Terms and conditions may change over time");
-                        if (pozStart != -1)
+                        if (pozStart == -1)
                         {
                             doc.Add(new iTextSharp.text.Paragraph("Terms and conditions will not change over time\n"));
                         }
@@ -254,19 +254,19 @@ namespace VirginiaData
                         }
 
                         pozStart = s.IndexOf("reserves the right to disclose your personal information");
-                        if (pozStart != -1)
+                        if (pozStart == -1)
                         {
                             doc.Add(new iTextSharp.text.Paragraph("Your personal information is safe\n"));
                         }
 
                         pozStart = s.IndexOf("service can delete your account");
-                        if (pozStart != -1)
+                        if (pozStart == -1)
                         {
                             doc.Add(new iTextSharp.text.Paragraph("The service can not delete your account\n"));
                         }
 
                         pozStart = s.IndexOf("tracks you on other platforms");
-                        if (pozStart != -1)
+                        if (pozStart == -1)
                         {
                             doc.Add(new iTextSharp.text.Paragraph("You will not be traked on other platforms\n"));
                         }
@@ -283,11 +283,13 @@ namespace VirginiaData
                             doc.Add(new iTextSharp.text.Paragraph("Your browser history is safe\n"));
                         }
 
-                        pozStart = s.IndexOf("cancel subscription");
+                        pozStart = s.IndexOf("cancel the subscription");
                         if (pozStart == -1)
                         {
                             doc.Add(new iTextSharp.text.Paragraph("There is no automatically subscription\n"));
                         }
+
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
 
                         //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -315,7 +317,7 @@ namespace VirginiaData
                         }
 
                         pozStart = s.IndexOf("Terms and conditions may change over time");
-                        if (pozStart == -1)
+                        if (pozStart != -1)
                         {
                             doc.Add(new iTextSharp.text.Paragraph("Terms and conditions may change over time\n"));
                         }
@@ -327,13 +329,13 @@ namespace VirginiaData
                         }
 
                         pozStart = s.IndexOf("reserves the right to disclose your personal information");
-                        if (pozStart == -1)
+                        if (pozStart != -1)
                         {
                             doc.Add(new iTextSharp.text.Paragraph("Your personal information may be used or sold\n"));
                         }
 
                         pozStart = s.IndexOf("service can delete your account");
-                        if (pozStart == -1)
+                        if (pozStart != -1)
                         {
                             doc.Add(new iTextSharp.text.Paragraph("The service can delete your account\n"));
                         }
@@ -356,11 +358,13 @@ namespace VirginiaData
                             doc.Add(new iTextSharp.text.Paragraph("Your browser history is not safe\n"));
                         }
 
-                        pozStart = s.IndexOf("cancel subscription");
+                        pozStart = s.IndexOf("cancel the subscription");
                         if (pozStart != -1)
                         {
                             doc.Add(new iTextSharp.text.Paragraph("You will subscribe automatically\n"));
                         }
+
+                        doc.Add(new iTextSharp.text.Paragraph("\n"));
 
 
                         ///////////////////////////////////////////////////////////////////////////////////////////
@@ -374,7 +378,7 @@ namespace VirginiaData
                         pozStart = s.IndexOf("@gmail.com");
                         if (pozStart != -1)
                         {
-                            pozEnd = pozStart;
+                            pozEnd = pozStart + 7;
                             while (s[pozStart] != ' ' && pozStart > 0) --pozStart;
                             while (s[pozEnd] != ' ' && pozEnd < s.Length && s[pozEnd] != '.') ++pozEnd;
                             str = String.Copy(s.Substring(pozStart, pozEnd - pozStart));
